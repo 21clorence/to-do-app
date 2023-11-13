@@ -1,4 +1,18 @@
-#tsparticles{
-    width: 100vw;
-    height: 100vh;
+#welcome-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.homepage-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.homepage-layout > div{
+    z-index: 1;
 }

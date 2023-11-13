@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    padding:0;
+}
+#main-parent-div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#root{
+    background-color: #2d2d2d;
+    color: rgb(255, 244, 230);
+    font-family: Roboto Slab;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab'),url(../fonts/RobotoSlab-VariableFont_wght.ttf) format('truetype');
+        
+}
