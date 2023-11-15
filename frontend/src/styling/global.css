@@ -13,13 +13,12 @@ body{
 }
 
 #root{
-    background-color: #2d2d2d;
-    color: rgb(255, 244, 230);
+    background-color: #1701AC;
+    color: #D7D9D7;
     font-family: Roboto Slab;
 }
 
 @font-face {
     font-family: 'Roboto Slab';
     src: local('Roboto Slab'),url(../fonts/RobotoSlab-VariableFont_wght.ttf) format('truetype');
-        
 }

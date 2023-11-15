@@ -5,6 +5,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import '../styling/home.css';
 import '../styling/global.css';
+import homeParticleOptions from "../tsparticles-options/homebackground.js";
 
 const Home = () => {
     //initialize particle effects
@@ -16,7 +17,7 @@ const Home = () => {
     const options = {
       background: {
         color: {
-          value: "#2d2d2d"
+          value: "#170A1C"
         }
       },
       particles: {
@@ -27,12 +28,12 @@ const Home = () => {
         number: {
           value: 80,
           density: {
-              enable: true,
+              enable: false,
               area: 800
           }
         },
         color: {
-          value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"]
+          value: ["#0B4F6C", "#145C9E"]
         },
         shape: {
           type: "circle"
@@ -41,20 +42,21 @@ const Home = () => {
           value: 1
         },
         size: {
-            value: { min: 1, max: 8 }
+            value: { min: 1, 
+                     max: 8 }
         },
         links: {
           enable: true,
           distance: 150,
-          color: "#808080",
+          color: "#FBFBFB",
           opacity: 0.4,
           width: 1
         },
         move: {
           enable: true,
           speed: 5,
-          direction: "none",
-          random: false,
+          direction: "bottomRight",
+          random: true,
           straight: false,
           outModes: "out"
         }
@@ -83,11 +85,11 @@ const Home = () => {
           <Particles
               id="tsparticles"
               init={particlesInit}
-              options={options}
+              options={homeParticleOptions()}
           />
           <div className="homepage-layout">
             <div className="left-side">
-              <h1>Get done what you need to</h1>
+              <h1>Get done what you need to, and only that</h1>
             </div>
             <div className="image-container">
 
